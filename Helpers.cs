@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace MovieHire
 {
-    class Helpers
+   public class Helpers
     {
-        private static string ServerName = @"DESKTOP-P9388SN\SQLEXPRESS";
-        private static string DatabaseName = @"Movies_Rentals";
+        //private static string ServerName = @"DESKTOP-P9388SN\SQLEXPRESS";
+        //private static string DatabaseName = @"Movies_Rentals";
 
         public static string HostConfig()
         {
-            return @"Data Source="+ ServerName +"; Initial Catalog="+ DatabaseName +"; Integrated Security=True";
+            return @"Data Source=DESKTOP-P9388SN\SQLEXPRESS;Initial Catalog=Movies_Rentals;Integrated Security=True";
         }
 
         private static string[] GetDictionaryKeys(Dictionary<string, object> dict)
